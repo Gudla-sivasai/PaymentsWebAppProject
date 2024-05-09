@@ -1,6 +1,6 @@
-package com.pack.siva.servs;
+package com.servlets;
 
-import com.pack.siva.dao.*;
+import com.dao.*;
 
 import java.sql.Date;
 import jakarta.servlet.ServletException;
@@ -45,7 +45,7 @@ public class RegisterServlet extends HttpServlet {
 		
 		response.setContentType("text/html");  
 		response.getWriter().write("<p style='color:green;'>Registration Successfull! Please Login<p>");
-		RequestDispatcher rd = request.getRequestDispatcher("/welcome.html");
+		RequestDispatcher rd = request.getRequestDispatcher("Index.jsp");
 		rd.include(request, response);
 	}
 

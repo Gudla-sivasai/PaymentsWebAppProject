@@ -1,4 +1,4 @@
-package com.pack.dto;
+package com.dto;
 
 public class BankAccount {
 
